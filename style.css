@@ -1,0 +1,93 @@
+.hidden {
+    display: none;
+}
+/* 1페이지 */
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+div.nav-name {
+    background-color: gray;
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.navbar-brand {
+    display: inline-block;
+    white-space: nowrap;
+    line-height: inherit;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.select-page {
+    float: right;
+    font-size: 18px;
+}
+
+.container img {
+    float: left;
+    width: 40%;
+    height: 40%;
+}
+
+p {
+    font-size: 22px;
+    font-style: italic;
+}
+
+/* 2페이지 */
+.header-site {
+    font-size: 36px;
+    text-decoration:underline;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+
+    
+}
+
+#page2 {
+    background-color:blanchedalmond;
+}
+
+div.recommend1 {
+    margin: 50px 0;
+}
+
+div.recommend2 {
+    margin-top: 70px;
+}
+
+.recommend1 a {
+    font-size: 20px;
+}
+
+.recommend2 a {
+    font-size: 20px;
+    color: red;
+}
+
+.recommend2 h1 {
+    font-size: 35px;
+}
+
+/* 3페이지 */
