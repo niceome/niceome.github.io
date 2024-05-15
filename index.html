@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="page1" class="page">
+        <header>
+            <div class="navbar">
+                <div class="nav-name">
+                    <a class="navbar-brand">Gi-Young Lim</a>
+                <div class="select-page">
+                    <ol>
+                        <li><a href="#" onclick="showPage('page1')">나의 정보</a></li>
+                        <li><a href="#" onclick="showPage('page2')">코딩 사이트 추천</a></li>
+                        <li><a href="#" onclick="showPage('page3')">컴퓨터 공학과 진로들</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        </header>
+   
+    <section>
+        <div class="container">
+            <div class="photozone">
+                <img src="myphoto.jpg">
+            </div>
+            <div class="myinfo">
+                <h1>---My Information---</h1>
+                <p class="info-detail">
+                    I am a student who is majoring in computer science. I am currently in the second year of college. The reason why I went to the computer science department is that I have been interested in security-related areas since high school. However, now, I am more interested in developers or single-person freelancers than in security-related fields. The final goal is to create an IT company by collecting the capital needed to start a business while developing basic knowledge and capabilities about IT as a developer or freelancer.
+                </p>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <div id="page2" class="page hidden">
+        <header>
+            <div class="header-site">코딩 사이트 추천
+
+            </div>
+            <div class="select-page">
+                <ul>
+                    <li><a href="#" onclick="showPage('page1')">나의 정보</a></li>
+                    <li><a href="#" onclick="showPage('page2')">코딩 사이트 추천</a></li>
+                    <li><a href="#" onclick="showPage('page3')">컴퓨터 공학과 진로들</a></li>
+                </ul>
+            </div>
+            <div class="start-2">
+                <p>개발자의 열풍이 불고 있는 지금, 이미 많은 사람들이 본인에게 적합한 코딩 사이트를 찾아서 코드를 작성하며 실력을 기르고 있을 것입니다! 그렇지만 이제 막 개발자에 대한 꿈이나 프로그래밍 언어에 대한 배움을 얻고자 하는 분들은 그 중에서 어떤 사이트가 본인한테 적합한지 알아내기 힘들 것이라고 생각이 들기 때문에 오늘은 제가 직접 이용해보고 만족도가 높았던 코딩 사이트 4개를 간략하게 소개해드리겠습니다!!</p>
+            </div>
+            
+        </header>
+        <nav>
+            <div class="recommend1">
+                <h2>누르면 해당 부분으로 이동합니다.</h2></h1>
+                <a href="#baekjoon">1. 백준온라인</a><br>
+                <a href="#koistudy">2. 코이스터디</a><br>
+                <a href="#codeup">3. 코드업</a><br>
+                <a href="#jungol">4. 정올 온라인</a><br>
+            </div>
+        </nav>
+        <section>
+            <div class="recommend2">
+                <h1 id="baekjoon">백준 온라인</h1>
+                <a href="https://www.acmicpc.net/">1. 백준온라인 바로가기</a>
+                <p>우리나라의 정보과학 알고리즘 트레이닝 사이트 중 하나이다. 가장 큰 특징으로는 예제가 아주 많으며 C, Java, Python 등의 유명한 프로그래밍 언어는 물론 BrainF**k, Whitespace, 아희, 엄준식 등의 마이너 언어들까지 지원한다는 것이다. 또한 여러 대회의 기출 문제들까지 정리되어 있어 ICPC, 한국정보올림피아드를 준비하거나 알고리즘을 공부하는 프로그래머들에게 많은 도움이 된다. 또한 다른 유저들의 코드를 볼 수 있으며, 블로그나 유튜브 등에 여러 유저들이 자신의 코드를 올려 놓았다는 장점도 있다.<br><br>
+                또한, 백준에서 주로 사용하는 기능들이 있는데 그것은 바로 <br><br>
+                    단계별로 풀어보기: 알고리즘 별로 분류해 놓은 백준 공식 문제 모음으로 총 50단계가 있으며, 각 단계당 5~20문제가 존재한다. 초반은 초보자들도 쉽게 해결할 수 있지만 단계가 높아질 수록 어려워진다. 일반적인 실무나 국내 회사의 코딩 테스트 대비를 위해서라면 30~35단계까지만 풀어도 충분하다.<br><br>
+                    문제집: 유저들이 자유롭게 생성할 수 있는 문제집 중에서 초심자 전용 문제집이 많이 존재한다. 좋은 문제들을 많이 모아놓은 문제집이 많으므로 애용하면 좋다. 원한다면 자신이 문제집을 만들어볼 수는 있지만, 이는 다른 사람에게 공개되지 않는다.<br><br>
+                    내가 못 푼 문제들: 전체 문제들 중에서 내가 아직 풀지 않은 문제를 정답자 수가 높은 순서로 정렬하여 보여준다. 정답자 수가 충분히 높다면 문제에 치명적인 오류가 있을 가능성이 낮으므로 믿고 풀어도 좋다.<br><br>
+                    그룹: 유저들이 그룹을 이뤄 문제를 푸는 데 도움이 되는 문제집, 연습, 랭킹, 게시판 등 다양한 기능들을 지원한다.만약 같이 백준으로 PS를 연습하거나 스터디를 진행한다면 이 기능을 활용해 스터디 리더나 친구의 추천을 받아 문제를 고를 수 있다.</p>
+            
+                <h1 id="koistudy">KOISTUDY</h1>
+                <a href="http://www.koistudy.net/">2. 코이스터디 바로가기</a>
+                <p>
+                    우리나라의 알고리즘 트레이닝 사이트 중 하나로, 정보과학에서 프로그래밍과 알고리즘 설계에 관심을 가진 학생들이 주어진 문제를 창의적으로 해결하는 능력을 기르기 위한 목적으로 만들어진 사이트이다. KOISTUDY에는 기초 100제, IamCoder 대회, C++ Library 등의 메뉴와 한국정보올림피아드를 준비할 수 있는 메뉴도 있으며, 다른 정보 관련 사이트로 갈 수 있는 메뉴도 존재한다. 다른 사이트와는 다르게 문제 ID가 16진수로 되어있다.
+                </p>
+                <h1 id="codeup">코드업</h1>
+                <a href="https://www.codeup.kr/">3. 코드업 바로가기</a>
+                <p>
+                    정보과학 의 기초, 심화 및 한국정보올림피아드 대비 등의 정보과학 예제를 풀어볼 수 있는 알고리즘 트레이닝 사이트이다.<br><br>
+                    또한 스페셜 저지(Special Judge, 줄여서 SPJ라고도 한다)라는 것이 있는데, 스페셜 저지는 정답이 여러 가지인 문제나 입력이 없이 출력만 하는 문제, 테스트 케이스가 하나만 있는 문제 등에 사용된다. 그런데 스페셜 저지 문제는 스페셜 저지를 위한 파일 비교 소스가 특별히 필요하기 때문에, 아직 스페셜 저지가 적용되지 않은 스페셜 저지 문제들이 있다.
+
+                </p>
+                <h1 id="jungol">정올</h1>
+                <a href="https://www.jungol.co.kr/">4. 정올 온라인 바로가기</a>
+                <p>
+                    대한민국의 정보과학 알고리즘 트레이닝 사이트 중 하나이다. 안양시에 위치하는 한글과컴퓨터학원에서 운영하는 사이트이다. 가장 큰 특징으로는 사이트 이름 답게 정보올림피아드 및 기타 프로그래밍 대회에 나온 문제들이 다 실려있다는 것과, 사이트 전용 교재인 자기주도 C언어 프로그래밍이라는 책을 통하여 기초를 다지기 쉽다는 것. 다른 알고리즘 트레이닝 사이트와 달리 JUNGOL 에서는 채점 점수와 틀린 테스트케이스 또한 알려준다. 회원가입은 ID로만 가능하며, ID로 회원가입하고, 네이버나 구글 계정을 연결할 수 있다.
+                </p>
+            </div>
+        </section>
+        
+        
+    </div>
+
+    <div id="page3" class="page hidden">
+        <header>
+            <div class="header-site">컴퓨터 공학과 진로들
+
+            </div>
+            <div class="select-page">
+                <ul>
+                    <li><a href="#" onclick="showPage('page1')">나의 정보</a></li>
+                    <li><a href="#" onclick="showPage('page2')">코딩 사이트 추천</a></li>
+                    <li><a href="#" onclick="showPage('page3')">컴퓨터 공학과 진로들</a></li>
+                </ul>
+            </div>
+    </div>
+    
+</body>
+</html>
