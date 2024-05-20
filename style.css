@@ -5,6 +5,7 @@
 img {
     vertical-align: middle;
     border-style: none;
+    
 }
 
 
@@ -33,6 +34,7 @@ div.nav-name {
     display: inline-block;
     white-space: nowrap;
     line-height: inherit;
+    font-size: 30px;
 }
 
 .nav-bar {
@@ -55,14 +57,18 @@ p {
     font-style: italic;
 }
 
+
+
 /* 2페이지 */
+
+
 .header-site {
     font-size: 36px;
     text-decoration:underline;
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
-
-    
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #page2 {
@@ -71,6 +77,10 @@ p {
 
 div.recommend1 {
     margin: 50px 0;
+}
+
+.start-2 {
+    margin-top: 20px;
 }
 
 div.recommend2 {
@@ -91,3 +101,36 @@ div.recommend2 {
 }
 
 /* 3페이지 */
+
+.job-title {
+    margin-top: 40px;
+    font-size: larger;
+}
+
+.white-hacker {
+    margin-bottom: 70px
+}
+
+.white-hacker2 {
+    margin-bottom: 100px;
+}
+
+.programmer {
+    margin-bottom: 70px;
+}
+
+.programmers2 {
+    margin-bottom: 100px;
+}
+
+.big-data {
+    margin-bottom: 70px;
+}
+
+.big-data2 {
+    margin-bottom: 100px;
+}
+
+.game-programmer {
+    margin-bottom: 70px;
+}
