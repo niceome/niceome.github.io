@@ -1,11 +1,19 @@
 .hidden {
     display: none;
 }
+
+body {
+    background-color: blanchedalmond;
+}
 /* 1페이지 */
 img {
     vertical-align: middle;
     border-style: none;
     
+}
+
+.info-detail {
+    line-height: 1.5;
 }
 
 
@@ -52,7 +60,7 @@ div.nav-name {
 
 p {
     font-size: 22px;
-    font-style: italic;
+    font-style:normal;
 }
 
 
@@ -67,10 +75,6 @@ p {
     font-family: 'Montserrat', sans-serif;
     padding-top: 30px;
     padding-bottom: 30px;
-}
-
-#page2 {
-    background-color:blanchedalmond;
 }
 
 div.recommend1 {
