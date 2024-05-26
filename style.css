@@ -10,8 +10,6 @@ img {
 
 
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -115,12 +113,20 @@ div.recommend2 {
     margin-bottom: 100px;
 }
 
+.white-hacker2 h2 {
+    margin: 80px 0 0;
+}
+
 .programmer {
     margin-bottom: 70px;
 }
 
 .programmers2 {
     margin-bottom: 100px;
+}
+
+.programmers2 h2 {
+    margin: 80px 0 0;
 }
 
 .big-data {
@@ -131,6 +137,14 @@ div.recommend2 {
     margin-bottom: 100px;
 }
 
+.big-data2 h2 {
+    margin: 80px 0 0;
+}
+
 .game-programmer {
     margin-bottom: 70px;
+}
+
+.game-programmer2 h2 {
+    margin: 80px 0 0;
 }
