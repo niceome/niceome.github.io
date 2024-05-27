@@ -7,33 +7,91 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <style>
-         @media screen and (max-width: 767px) {
-            body {
-                width: auto;
-            }
-            .container {
-                display: flex;
-                flex-direction: column; 
-                align-items: center; 
-            }
-            .photozone, .myinfo {
-                width: 100%; 
-                margin: 10px 0; 
-            }
-            .photozone img {
-                width: 100%; 
-                height: auto; 
-            }
-        }
+
+@media screen and (max-width: 1200px) {
+    .page {
+        padding: 15px;
+    }
+
+    .photozone img {
+        width: 250px;
+    }
+
+    .myinfo h1 {
+        font-size: 24px;
+    }
+
+    .myinfo p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .select-page ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .photozone img {
+        width: 100%;
+    }
+
+    .myinfo {
+        width: 100%;
+    }
+
+    .myinfo h1 {
+        font-size: 22px;
+    }
+
+    .myinfo p {
+        font-size: 16px;
+    }
+
+    .job-introduce img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .select-page ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .photozone img {
+        width: 100%;
+    }
+
+    .myinfo {
+        width: 100%;
+    }
+
+    .myinfo h1 {
+        font-size: 20px;
+    }
+
+    .myinfo p {
+        font-size: 14px;
+    }
+
+    .job-introduce img {
+        width: 100%;
+    }
+}
+
     </style>
 </head>
 <body>
-    <div id="page1" class="page">
         <header>
-            <div class="navbar">
+            
                 <div class="nav-name">
-                    <a class="navbar-brand">임기영
-                    </a>
+                    <a class="navbar-brand">임기영</a>
                 </div>    
                 <div class="select-page">
                     <ul>
@@ -42,16 +100,16 @@
                         <li><a href="#" onclick="showPage('page3')">컴퓨터 공학과 진로들</a></li>
                     </ul>
                 </div>
-        </div>
+        
         </header>
-   
-    <section>
+    <div id="page1" class="page">
+        <section>
         <div class="container">
             <div class="photozone">
                 <img src="myphoto.jpg">
             </div>
             <div class="myinfo">
-                <h1>---내 정보---</h1>
+                <h1>---Info---</h1>
                 <p class="info-detail">
                     I am a student who is majoring in computer science. I am currently in the second year of college. The reason why I went to the computer science department is that I have been interested in security-related areas since high school. However, now, I am more interested in developers or single-person freelancers than in security-related fields. The final goal is to create an IT company by collecting the capital needed to start a business while developing basic knowledge and capabilities about IT as a developer or freelancer.
                 </p><br>
@@ -66,22 +124,7 @@
     
 
     <div id="page2" class="page hidden">
-        <header>
-            <div class="nav-name">
-                <a class="navbar-brand">임기영
-                </a>
-            </div>    
-            <div class="header-site">코딩 사이트 추천
-
-            </div>
-            <div class="select-page">
-                <ul>
-                    <li><a href="#" onclick="showPage('page1')">나의 정보</a></li>
-                    <li><a href="#" onclick="showPage('page2')">코딩 사이트 추천</a></li>
-                    <li><a href="#" onclick="showPage('page3')">컴퓨터 공학과 진로들</a></li>
-                </ul>
-            </div>
-        </header>
+       
         
             <div class="start-2">
                 <p>개발자의 열풍이 불고 있는 지금, 이미 많은 사람들이 본인에게 적합한 코딩 사이트를 찾아서 코드를 작성하며 실력을 기르고 있을 것입니다! 그렇지만 이제 막 개발자에 대한 꿈이나 프로그래밍 언어에 대한 배움을 얻고자 하는 분들은 그 중에서 어떤 사이트가 본인한테 적합한지 알아내기 힘들 것이라고 생각이 들기 때문에 오늘은 제가 직접 이용해보고 만족도가 높았던 코딩 사이트 4개를 간략하게 소개해드리겠습니다!!</p>
@@ -132,22 +175,7 @@
 
     
     <div id="page3" class="page hidden">
-        <header>
-            <div class="nav-name">
-                <a class="navbar-brand">임기영
-                </a>
-            </div>    
-            <div class="header-site">컴퓨터 공학과 진로들
-
-            </div>
-            <div class="select-page">
-                <ul>
-                    <li><a href="#" onclick="showPage('page1')">나의 정보</a></li>
-                    <li><a href="#" onclick="showPage('page2')">코딩 사이트 추천</a></li>
-                    <li><a href="#" onclick="showPage('page3')">컴퓨터 공학과 진로들</a></li>
-                </ul>
-            </div>
-            </header>
+        
             <section>
                 
             </section>
