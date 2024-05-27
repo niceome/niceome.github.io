@@ -1,16 +1,14 @@
-/* External CSS file: style.css */
-
-/* General styles */
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 a {
-    color: #007bff;
+    color: hsl(210, 32%, 89%);
     text-decoration: none;
 }
 
@@ -30,7 +28,7 @@ header {
     padding: 20px;
     background-color: #333;
     color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-name {
@@ -68,7 +66,7 @@ header {
     margin: 20px auto;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -88,13 +86,22 @@ header {
 }
 
 .myinfo h1 {
-    font-size: 26px;
-    margin-bottom: 10px;
+    font-size: 2em;
+    font-family: 'Arial', sans-serif;
+    color: hsl(204, 85%, 16%);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #2980b9;
+    display: inline-block;            
+    padding-bottom: 10px;
+    margin-bottom: 20x;
 }
 
 .myinfo p {
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
 .myinfo .label {
@@ -103,10 +110,41 @@ header {
     color: #007bff;
 }
 
-/* Section styles */
+.graduation {
+    margin-top: 20px;
+}
+
+.graduation h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.graduation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.graduation ul li {
+    background-color: #ecf0f1;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: #34495e;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.graduation ul li:hover {
+    background-color: #bdc3c7;
+}
+
+
 .start-2 p {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
 nav .recommend1 h2 {
@@ -117,7 +155,7 @@ nav .recommend1 h2 {
 nav .recommend1 a {
     display: block;
     margin-bottom: 10px;
-    color: #007bff;
+    color: hsl(347, 74%, 41%);
     text-decoration: none;
 }
 
@@ -126,11 +164,12 @@ nav .recommend1 a:hover {
 }
 
 .recommend2 h1 {
-    font-size: 22px;
+    font-size: 40px;
     margin-top: 20px;
 }
 
 .recommend2 a {
+    font-size: 20px;
     color: #007bff;
     text-decoration: none;
 }
@@ -141,14 +180,17 @@ nav .recommend1 a:hover {
 
 .recommend2 p {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
 /* Job introduction styles */
 .job-introduce .white-hacker,
-.job-introduce .data-scientist,
-.job-introduce .fullstack-developer {
-    margin-top: 20px;
+.job-introduce .programmers,
+.job-introduce .big-data,
+.job-introduce .game-programmer {
+    margin-top: 80px;
 }
 
 .job-introduce h1 {
@@ -157,7 +199,7 @@ nav .recommend1 a:hover {
 }
 
 .job-introduce img {
-    width: 90%;
+    width: 50%;
     height: auto;
     border-radius: 10px;
 }
@@ -174,8 +216,9 @@ nav .recommend1 a:hover {
 
 .job-introduce p {
     font-size: 16px;
-    line-height: 1.5;
-    margin-top: 10px;
+    line-height: 1.8;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    text-align: justify;
 }
-
 
