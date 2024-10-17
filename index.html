@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <style>
-
-@media screen and (max-width: 1200px) {
+        @media screen and (max-width: 1200px) {
     .page {
         padding: 15px;
     }
@@ -53,9 +52,6 @@
         font-size: 16px;
     }
 
-    .job-introduce img {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -80,14 +76,12 @@
         font-size: 14px;
     }
 
-    .job-introduce img {
-        width: 100%;
-    }
-}
 
+}
     </style>
 </head>
 <body>
+    <body>
         <header>
             
                 <div class="nav-name">
@@ -97,7 +91,7 @@
                     <ul>
                         <li><a href="#" onclick="showPage('page1')">나의 정보</a></li>
                         <li><a href="#" onclick="showPage('page2')">코딩 사이트 추천</a></li>
-                        <li><a href="#" onclick="showPage('page3')">컴퓨터 공학과 진로들</a></li>
+                        <li><a href="#" onclick="showPage('page3')">개발자 로드맵</a></li>
                     </ul>
                 </div>
         
@@ -107,15 +101,30 @@
         <div class="container">
             <div class="photozone">
                 <img src="myphoto.jpg">
+                <div class="main-language">
+                    <h4>Main Programming Language</h4>
+                <h5>Front-End</h5>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                </ul>
+                <h5>Back-End</h5>
+                <ul>
+                    <li>JAVA</li>
+                </ul>
+                </div>
+                
             </div>
             <div class="myinfo">
                 <h1>---Info---</h1>
                 <p class="info-detail">
-                    I am a student who is majoring in computer science. I am currently in the second year of college. The reason why I went to the computer science department is that I have been interested in security-related areas since high school. However, now, I am more interested in developers or single-person freelancers than in security-related fields. The final goal is to create an IT company by collecting the capital needed to start a business while developing basic knowledge and capabilities about IT as a developer or freelancer.
+                    I am a student who is majoring in computer science. The reason why I went to the computer science department is that I have been interested in security-related areas since high school. However, now, I am more interested in developers or single-person freelancers than in security-related fields. The final goal is to create an IT company by collecting the capital needed to start a business while developing basic knowledge and capabilities about IT as a developer or freelancer.
                 </p><br>
                 <div class="label" style="margin-top: 20px">
                     <a class="label" href="mailto:gylim7826@naver.com">e-mail</a><br>
                     <a class="blog" href="https://blog.naver.com/coditory">my-blog</a>
+                    
                 </div>
             </div>
             
@@ -123,10 +132,10 @@
             <div class="graduation">
                 <h2>Graduation</h2>
                 <ul>
-                    <li>서울 청목 어린이집 졸업</li>
-                    <li>홍은초등학교 졸업</li>
-                    <li>인왕중학교 졸업</li>
-                    <li>서울 대성고등학교 졸업</li>
+                    <li>서울 청목 어린이집</li>
+                    <li>홍은초등학교</li>
+                    <li>인왕중학교</li>
+                    <li>서울 대성고등학교</li>
                 </ul>
             </div>
             </div>
@@ -141,172 +150,73 @@
        
         
             <div class="start-2">
-                <p>개발자의 열풍이 불고 있는 지금, 이미 많은 사람들이 본인에게 적합한 코딩 사이트를 찾아서 코드를 작성하며 실력을 기르고 있을 것입니다! 그렇지만 이제 막 개발자에 대한 꿈이나 프로그래밍 언어에 대한 배움을 얻고자 하는 분들은 그 중에서 어떤 사이트가 본인한테 적합한지 알아내기 힘들 것이라고 생각이 들기 때문에 오늘은 제가 직접 이용해보고 만족도가 높았던 코딩 사이트 4개를 간략하게 소개해드리겠습니다!!</p>
+                <h1>코딩 사이트 추천</h1>
             </div>
             
         
         <nav>
             <div class="recommend1">
-                <h2>누르면 해당 사이트 설명으로 이동</h2></h1>
+                <h2>아래 링크누르면 해당 사이트 설명으로 이동</h2></h1>
                 <a href="#baekjoon">1. 백준온라인</a><br>
-                <a href="#koistudy">2. 코이스터디</a><br>
-                <a href="#codeup">3. 코드업</a><br>
+                <a href="#leetcode">2. LeetCode</a><br>
+                <a href="#hackerrank">3. 해커랭크</a><br>
                 <a href="#jungol">4. 정올 온라인</a><br>
             </div>
         </nav>
-        <section>
-            <section>
-                <div class="recommend2">
-                    <div class="site">
-                        <h1 id="baekjoon">백준 온라인</h1>
-                        <a href="https://www.acmicpc.net/">백준온라인 바로가기</a>
-                        <p>
-                            백준 온라인 저지는 한국에서 가장 인기 있는 프로그래밍 문제 풀이 사이트 중 하나입니다. 다양한 난이도의 문제들이 있으며, 문제는 알고리즘, 자료 구조, 수학 등 다양한 분야를 포함합니다. <b>단계별로 풀어보기</b> 기능을 통해 체계적으로 문제를 풀어나갈 수 있으며, <b>문제집</b> 기능을 통해 유저들이 자유롭게 생성한 문제집을 활용할 수 있습니다.
-                        </p>
-                        <h2>특징</h2>
-                        <ul>
-                            <li>다양한 난이도의 문제</li>
-                            <li>체계적인 학습을 위한 단계별로 풀어보기</li>
-                            <li>유저 생성 문제집</li>
-                            <li>광범위한 커뮤니티와 토론</li>
-                            <li>다양한 언어 지원</li>
-                        </ul>
-                    </div>
-                    <div class="site">
-                        <h1 id="koistudy">KOISTUDY</h1>
-                        <a href="http://www.koistudy.net/">코이스터디 바로가기</a>
-                        <p>
-                            KOISTUDY는 정보과학에서 프로그래밍과 알고리즘 설계에 관심을 가진 학생들을 위한 사이트입니다. 기초 100제, IamCoder 대회, C++ Library 등의 메뉴와 한국정보올림피아드를 준비할 수 있는 메뉴가 있습니다. 다른 사이트와는 다르게 문제 ID가 16진수로 되어 있는 것이 특징입니다.
-                        </p>
-                        <h2>특징</h2>
-                        <ul>
-                            <li>기초 100제 문제 제공</li>
-                            <li>IamCoder 대회</li>
-                            <li>C++ 라이브러리 활용</li>
-                            <li>한국정보올림피아드 대비 문제</li>
-                            <li>16진수 문제 ID</li>
-                        </ul>
-                    </div>
-                    <div class="site">
-                        <h1 id="codeup">코드업</h1>
-                        <a href="https://www.codeup.kr/">코드업 바로가기</a>
-                        <p>
-                            코드업은 정보과학의 기초, 심화 및 한국정보올림피아드 대비 등의 예제를 풀어볼 수 있는 알고리즘 트레이닝 사이트입니다. 다양한 언어로 문제를 풀 수 있으며, 스페셜 저지(Special Judge) 기능을 통해 다양한 형태의 문제를 채점할 수 있습니다.
-                        </p>
-                        <h2>특징</h2>
-                        <ul>
-                            <li>기초부터 심화까지 다양한 문제 제공</li>
-                            <li>다양한 프로그래밍 언어 지원</li>
-                            <li>스페셜 저지 기능</li>
-                            <li>한국정보올림피아드 대비 문제</li>
-                            <li>커뮤니티와 토론 기능</li>
-                        </ul>
-                    </div>
-                    <div class="site">
-                        <h1 id="jungol">정올</h1>
-                        <a href="https://www.jungol.co.kr/">정올 온라인 바로가기</a>
-                        <p>
-                            정올 온라인 저지는 대한민국의 정보과학 알고리즘 트레이닝 사이트 중 하나입니다. 정보올림피아드 및 기타 프로그래밍 대회에 나온 문제들이 많이 실려 있으며, 사이트 전용 교재를 통해 기초를 다질 수 있습니다. 채점 점수와 틀린 테스트케이스를 제공하는 것이 큰 장점입니다.
-                        </p>
-                        <h2>특징</h2>
-                        <ul>
-                            <li>정보올림피아드 문제 제공</li>
-                            <li>다양한 프로그래밍 대회 문제</li>
-                            <li>사이트 전용 교재</li>
-                            <li>채점 점수 및 틀린 테스트케이스 제공</li>
-                            <li>커뮤니티와 토론 기능</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+        
+            
+
+    <div class="recommend2">
+                   
+    <section id="sites-list">
+        <div class="site-card" id="baekjoon">
+            <h2>백준 온라인</h2>
+            <a href="https://www.acmicpc.net/">https://www.acmicpc.net/</a>
+            <div class="site_photo"><img src="baekjoon.jpg"></div>
+            <p>다양한 알고리즘 분류와 난이도별로 문제를 선별해서 풀 수 있습니다. 또한, 문제 해결로 점수를 얻어 당신의 티어를 높이세요 !</p>
+            <button onclick="showDetails('baekjoon')">자세한 정보</button>
+        </div>
+        <div class="site-card" id="leetcode">
+            <h2>LeetCode</h2>
+            <a href="https://leetcode.com/">https://leetcode.com/</a>
+            <div class="site_photo"><img src="leetcode.png"></div>
+            <p>전 세계적으로 널리 사용되는 코딩 인터뷰 준비 사이트로, 다양한 문제를 풀며 문제 해결 능력과 기술 면접 대비를 할 수 있습니다.</p>
+            <button onclick="showDetails('leetcode')">자세한 정보</button>
+        </div>
+        <div class="site-card" id="hackerrank">
+            <h2>HackerRank</h2>
+            <a href="https://www.hackerrank.com/">https://www.hackerrank.com/</a>
+            <div class="site_photo"><img src="hackerrank.png"></div>
+            <p>기술 인터뷰 준비와 문제 해결 능력을 키우기에 최적화된 사이트로, 알고리즘뿐만 아니라 데이터베이스, 보안 등 다양한 분야에서 연습할 수 있습니다.</p>
+            <button onclick="showDetails('hackerrank')">자세한 정보</button>
+        </div>
+        <div class="site-card" id="jungol">
+            <h2>정올 온라인</h2>
+            <a href="https://jungol.co.kr/">https://jungol.co.kr/</a>
+            <div class="site_photo"><img src="jungol.jpg"></div>
+            <p>국내 알고리즘 학습에 특화된 플랫폼으로, 경쟁 프로그래밍 실력을 키우기에 탁월한 문제들이 제공됩니다.</p>
+            <button onclick="showDetails('jungol')">자세한 정보</button>
+        </div>
+        
+    </section>
     </div>
+</div>
 
     
     <div id="page3" class="page hidden">
         
-            <section>
+            <div class="page3_nav">
+                <a href="frontend">프론트엔드 개발자</a>
+                <a href="backend">백엔드 개발자</a>
+                <a href="fullstack">풀스택 개발자</a>
+                <a href="devops">데브 옵스 개발자</a>
+            </div>
+        </div>
                 
-            </section>
-            <content>
-                <div class="job-introduce">
-                    <div class="white-hacker">
-                        <h1>1. 정보 보안 전문가</h1>
-                        <img src="화이트해커.jpg">
-                    </div>
-                    <div class="white-hacker2">
-                       <h2>-- 하는 일 --</h2>
-                       <p>
-                        정보 보호 전문가는 조직의 정보 보호가 제대로 이루어지고 있는지 확인 모의 해킹 및 취약점 분석을 실시하여 가치 있고 중요한 정보를 보호하기 위한 대응 방안을 제시하며 해커의 침입을 빠르게 찾아내어 중요한 정보를 보호하고, 시스템 손상이나 정보 유출시 이를 원래대로 복구.<br>
-                        보안 프로그램 및 보안 관련 장비를 개발
-                       </p>
-                       <h2>-- 관련 직업 --</h2>
-                       <ul>
-                        <li><h3>보안 관제사</h3></li>
-                        <li><h3>침해 대응 전문가</h3></li>
-                        <li><h3>디지털 포렌식 전문가</h3></li>
-                        <li><h3>보안 백신 개발자</h3></li>
-                        <li><h3>정보 보호 컨설턴트</h3></li>
-                        <li><h3>보안 솔루션 개발자 등</h3></li>
-                    </ul> 
-                    </div>
-                    <div class="programmers">
-                        <h1>2. 개발자</h1>
-                        <img src="개발자.jpg">
-                    </div>
-                    <div class="programmers2">
-                        <h2>-- 하는 일 --</h2>
-                        <p>
-                            소프트웨어 개발자는 시스템 분석가의 요구에 맞게 컴퓨터 프로그래밍을 하거나 시스템 설계를 하는 사람이다. 프로그래머의 좀 더 넓은 범위로 프로그램 설계 분야 전체를 포함한다.<br> 
-                        </p>
-                        <h2>-- 관련 직업--</h2>
-                        <ul>
-                            <li><h3>프로젝트 관리자</h3></li>
-                            <li><h3>게임 기획자</h3></li>
-                            <li><h3>웹 디자이너</h3></li>
-                            <li><h3>프론트엔드 개발자</h3></li>
-                            <li><h3>백엔드 개발자</h3></li>
-                            <li><h3>DevOps, DBA 등</h3></li>
-                        </ul>
-                    </div>
-                    <div class="big-data">
-                        <h1>3. 빅데이터 전문가</h1>
-                        <img src="빅데이터 분석가.jpg">
-                    </div>
-                    <div class="big-data2">
-                        <h2>-- 하는 일 --</h2>
-                        <p>
-                            빅 데이터 전문가는 대량의 빅 데이터로 사람들의 행동이나 시장의 변화 등을 분석하는데 도움이 되는 정보를 제공한다. 구체적으로 데이터 분석, 데이터 시각화 등을 통한 정보 제공 담당
-                        </p>
-                        <h2>-- 관련 직업 --</h2>
-                        <ul>
-                            <li><h3>컴퓨터 시스템 설계 분석가</h3></li>
-                            <li><h3>시스템 소프트웨어 개발자</h3></li>
-                            <li><h3>응용 소프트웨어 개발자</h3></li>
-                            <li><h3>금융, 유통, 서비스, 의료, 공공 분야 등</h3></li>
-                        </ul>
-                    </div>
-                    <div class="game-programmer">
-                        <h1>게임 개발자</h1>
-                        <img src="게임개발자.jpg">
-                    </div>
-                    <div class="game-programmer2">
-                        <h2>-- 하는 일 --</h2>
-                        <p>
-                            보편적으로 비디오 게임을 전문적으로 개발
-                        </p>
-                        <h2>-- 관련 직업 --</h2>
-                        <ul>
-                            <li><h3>총괄 프로듀서</h3></li>
-                            <li><h3>프로젝트 매니저</h3></li>
-                            <li><h3>게임 운영자</h3></li>
-                            <li><h3>시스템 디자이너</h3></li>
-                            <li><h3>컨텐츠 디자이너</h3></li>
-                            <li><h3>레벨 컨셉 디자이너</h3></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </content>
+        <div class="roadmap">
+            
+        </div>
+           
             
 
     </div>
