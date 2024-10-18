@@ -95,6 +95,7 @@ header {
 
 .main-language h5 {
   padding-left: 20px;
+  font-size: 15px;
 }
 
 .myinfo {
@@ -130,6 +131,11 @@ header {
   color: #007bff;
 }
 
+.right-side {
+  display: flex;
+  flex-direction: column;
+}
+
 .graduation {
   margin-top: 20px;
 }
@@ -161,6 +167,33 @@ header {
   background-color: #bdc3c7;
 }
 
+.hobby h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  text-align: center;
+  border-bottom: 2px solid #2980b9;
+}
+
+.hobby ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.hobby ul li {
+  background-color: #ecf0f1;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  color: #34495e;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.hobby ul li:hover {
+  background-color: #bdc3c7;
+}
+
 /* 여기서부터는 2페이지 */
 
 .start-2 {
@@ -172,11 +205,22 @@ header {
   text-align: center;
 }
 
+.recommend1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
 .recommend1 a {
-  line-height: 20px;
+  flex: 1;
+  text-align: center;
+  color: #333;
+  font-weight: 800;
   font-size: 20px;
-  color: black;
-  text-decoration: none;
+  padding: 10px 0;
 }
 
 .recommend1 a:hover {
@@ -188,6 +232,13 @@ header {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-around;
+}
+
+.sites-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .site-card {
@@ -232,7 +283,7 @@ header {
 .site-card p {
   font-size: 1.1em;
   color: #7f8c8d;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .site-card button {
