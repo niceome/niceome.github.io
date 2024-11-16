@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        @media screen and (max-width: 1200px) {
+    .page {
+        padding: 15px;
+    }
+
+    .photozone img {
+        width: 250px;
+    }
+
+    .myinfo h1 {
+        font-size: 24px;
+    }
+
+    .myinfo p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .select-page ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .photozone img {
+        width: 100%;
+    }
+
+    .myinfo {
+        width: 100%;
+    }
+
+    .myinfo h1 {
+        font-size: 22px;
+    }
+
+    .myinfo p {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .select-page ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .photozone img {
+        width: 100%;
+    }
+
+    .myinfo {
+        width: 100%;
+    }
+
+    .myinfo h1 {
+        font-size: 20px;
+    }
+
+    .myinfo p {
+        font-size: 14px;
+    }
+
+
+}
+    </style>
+</head>
+<body>
+    <body>
+        <header>
+           
+                <div class="nav-name">
+                    <a class="navbar-brand">임기영</a>
+                </div>    
+                <div class="select-page">
+                    <ul>
+                        <li><a href="#" onclick="showPage('page1')">나의 정보</a></li>
+                        <li><a href="#" onclick="showPage('page2')">코딩 사이트 추천</a></li>
+                        <li><a href="#" onclick="showPage('page3')">개발자 로드맵</a></li>
+                    </ul>
+                </div>
+           
+                
+        
+        </header>
+    <div id="page1" class="page">
+        <section>
+        <div class="container">
+            <div class="photozone">
+                <img src="myphoto.jpg">
+                <div class="main-language">
+                    <h4>Main Programming Language</h4>
+                <h5>Front-End</h5>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                </ul>
+                <h5>Back-End</h5>
+                <ul>
+                    <li>JAVA</li>
+                </ul>
+                </div>
+                
+            </div>
+            <div class="myinfo">
+                <h1>---Info---</h1>
+                <p class="info-detail">
+                    I am a student who is majoring in computer science. The reason why I went to the computer science department is that I have been interested in security-related areas since high school. However, now, I am more interested in developers or single-person freelancers than in security-related fields. The final goal is to create an IT company by collecting the capital needed to start a business while developing basic knowledge and capabilities about IT as a developer or freelancer.
+                </p><br>
+                <div class="label" style="margin-top: 100px">
+                    <a class="label" href="mailto:gylim7826@naver.com">e-mail</a><br>
+                    <a class="blog" href="https://blog.naver.com/coditory">my-blog</a>
+                    
+                </div>
+            </div>
+            
+            <div class="right-side">
+                <div class="graduation">
+                    <h2>Graduation</h2>
+                    <ul>
+                        <li>서울 청목 어린이집</li>
+                        <li>홍은초등학교</li>
+                        <li>인왕중학교</li>
+                        <li>서울 대성고등학교</li>
+                    </ul>
+                </div>
+                <div class="hobby">
+                    <h2>Interested in..</h2>
+                    <ul>
+                        <li>Climbing</li>
+                        <li>Badminton</li>
+                        <li>Collecting books</li>
+                        <li>Stock investment</li>
+                    </ul>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        <div id="disqus_thread"></div>
+<script>
+(function() {  
+var d = document, s = d.createElement('script');
+s.src = 'https://niceome.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+    </section>
+    
+    
+
+    <div id="page2" class="page hidden">
+       
+        
+            <div class="start-2">
+                <h1>코딩 사이트 추천</h1>
+            </div>
+            
+        
+        <nav>
+            <div class="recommend1">
+                <a href="#baekjoon">백준온라인</a><br>
+                <a href="#leetcode">LeetCode</a><br>
+                <a href="#hackerrank">HackerRank</a><br>
+                <a href="#jungol">정올 온라인</a><br>
+            </div>
+        </nav>
+        
+            
+
+    <div class="recommend2">
+                   
+    <div class="sites-list">
+        <div class="site-card" id="baekjoon">
+            <h2>백준 온라인</h2>
+            <a href="https://www.acmicpc.net/">https://www.acmicpc.net/</a>
+            <div class="site_photo"><img src="baekjoon.jpg"></div>
+            <p>다양한 알고리즘 분류와 난이도별로 문제를 선별해서 풀 수 있습니다. 또한, 문제 해결로 점수를 얻어 당신의 티어를 높이세요 !</p>
+            
+        </div>
+        <div class="site-card" id="leetcode">
+            <h2>LeetCode</h2>
+            <a href="https://leetcode.com/">https://leetcode.com/</a>
+            <div class="site_photo"><img src="leetcode.png"></div>
+            <p>전 세계적으로 널리 사용되는 코딩 인터뷰 준비 사이트로, 다양한 문제를 풀며 문제 해결 능력과 기술 면접 대비를 할 수 있습니다.</p>
+            
+        </div>
+        <div class="site-card" id="hackerrank">
+            <h2>HackerRank</h2>
+            <a href="https://www.hackerrank.com/">https://www.hackerrank.com/</a>
+            <div class="site_photo"><img src="hackerrank.png"></div>
+            <p>기술 인터뷰 준비와 문제 해결 능력을 키우기에 최적화된 사이트로, 알고리즘뿐만 아니라 데이터베이스, 보안 등 다양한 분야에서 연습할 수 있습니다.</p>
+            
+        </div>
+        <div class="site-card" id="jungol">
+            <h2>정올 온라인</h2>
+            <a href="https://jungol.co.kr/">https://jungol.co.kr/</a>
+            <div class="site_photo"><img src="jungol.jpg"></div>
+            <p>국내 알고리즘 학습에 특화된 플랫폼으로, 경쟁 프로그래밍 실력을 키우기에 탁월한 문제들이 제공됩니다.</p>
+            
+        </div>
+        
+    </div>
+    </div>
+</div>
+
+    
+    <div id="page3" class="page hidden">
+        <div class="page3_title">
+            <h1>개발자 로드맵</h1>
+        </div>
+        
+            <div class="page3_nav">
+                <a href="#frontend">프론트엔드 개발자</a>
+                <a href="#backend">백엔드 개발자</a>
+                <a href="#fullstack">풀스택 개발자</a>
+                <a href="#devops">데브옵스</a>
+            </div>
+            <div class="roadmap">
+                <div class="site-card">
+                <div class="frontend" id="frontend">
+                    <h2>프론트 엔드</h2>
+                    <img src="프론트 언어들.jpg">
+                    <h4></h4>
+                </div>
+                <div class="hidden">
+                    <div class="hidden-frontend">
+                        <img src="프론트로드맵.jpg">
+                        <h4>~~~~!!!!!</h4>
+                    </div>
+                </div>
+                    
+                
+                
+            </div>
+            <div class="site-card">
+                
+                <div class="backend" id="backend">
+                    <h2>백엔드 개발자</h2>
+                    <img src="백 언어들.jpg">
+                </div>
+                <div class="hidden">
+                    <div class="hidden-backend">
+                        <img>
+                        <h4>~~~~</h4>
+                    </div>
+                </div>
+                    
+                        
+                    
+                
+                </div>
+            
+            <div class="site-card">
+               
+                <div class="fullstack" id="fullstack">
+                    <h2>풀스택 개발자</h2>
+                    <img src="풀스택.jpg">
+                </div>
+                    <div class="hidden">
+                        <div class="hidden-fullstack">
+                            <img>
+                            <h4>~~~~</h4>
+                        
+                    </div>
+                    </div>
+                    
+            </div>
+            <div class="site-card">
+                
+                <div class="devops" id="devops">
+                    <h2>데브옵스 개발자</h2>
+                    <img src="데브옵스.jpg">
+                </div>
+                <div class="hidden">
+                    <div class="hidden-devops">
+                    
+                        <img>
+                        <h4>~~~~</h4>
+                
+                </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
