@@ -5,7 +5,7 @@ body {
   background: linear-gradient(to right, #b5ead7, #c7ceea);
 }
 
-/* 페이지 이동 */
+/* 고정 영역역 */
 
 header {
   display: flex;
@@ -63,8 +63,36 @@ header {
   opacity: 1;
 }
 
+footer {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.email {
+  margin-right: 30px;
+}
+
+.blog {
+  margin-left: 30px;
+}
+
+.email i,
+.blog i {
+  font-size: 25px;
+}
+
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /* 1 페이지 */
@@ -142,25 +170,6 @@ header {
   animation-delay: 3.6s;
 }
 
-.contact {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-top: 300px;
-}
-
-.email {
-  margin-right: 30px;
-}
-
-.blog {
-  margin-left: 30px;
-}
-
-.email i,
-.blog i {
-  font-size: 25px;
-}
 /* 2페이지 */
 
 /* 3페이지 */

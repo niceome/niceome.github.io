@@ -5,76 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="script.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
     <style>
-     @keyframes fadeIn {
+      @keyframes fadeIn {
         from {
-            opacity: 0;
+          opacity: 0;
         }
         to {
-            opacity: 1;
+          opacity: 1;
         }
-     }
+      }
     </style>
-    
-</head>
   </head>
   <body>
     <header>
       <div class="select-page">
         <ul>
-            <li><a href="#" onclick="showPage('page1')"><i class="fa-solid fa-code"><span class="tooltip">Home</span></i>
-               </a></li>
-            <li><a href="#" onclick="showPage('page2')"><i class="fa-solid fa-code"><span class="tooltip">About me</span></i>
-               </a></li>
-            <li><a href="#" onclick="showPage('page3')"><i class="fa-solid fa-code"><span class="tooltip">future</span></i>
-               </a></li>
+          <li>
+            <a href="#" onclick="showPage('page1')"
+              ><i class="fa-solid fa-code"><span class="tooltip">Home</span></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="showPage('page2')"
+              ><i class="fa-solid fa-code"
+                ><span class="tooltip">About me</span></i
+              >
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="showPage('page3')"
+              ><i class="fa-solid fa-code"
+                ><span class="tooltip">future</span></i
+              >
+            </a>
+          </li>
         </ul>
       </div>
     </header>
+    <footer>
+      <div class="contact">
+        <div class="email">
+          <a href="mailto:gylim7826@naver.com"
+            ><i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+        <div class="blog">
+          <a href="https://blog.naver.com/coditory"
+            ><i class="fa-solid fa-blog"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <div id="page1" class="page">
-        <div class="text">
-            <span>H</span>
-            <span>e</span>
-            <span>l</span>
-            <span>l</span>
-            <span>o</span>
-            <span>,</span>
-            <span>&nbsp;</span>
-            <span>G</span>
-            <span>i</span>
-            <span>&nbsp;</span>
-            <span>Y</span>
-            <span>o</span>
-            <span>u</span>
-            <span>n</span>
-            <span>g</span>
-            <span>(</span>
-            <span>)</span>
-            <span>;</span>
-        </div>
-
-        <div class="contact">
-          <div class="email"><a href="mailto:gylim7826@naver.com"><i class="fa-solid fa-envelope"></i>
-          </a></div>
-          <div class="blog"><a href="https://blog.naver.com/coditory"><i class="fa-solid fa-blog"></i>
-          </a></div>
-        </div>
-        
+      <div class="text">
+        <span>H</span>
+        <span>e</span>
+        <span>l</span>
+        <span>l</span>
+        <span>o</span>
+        <span>,</span>
+        <span>&nbsp;</span>
+        <span>G</span>
+        <span>i</span>
+        <span>&nbsp;</span>
+        <span>Y</span>
+        <span>o</span>
+        <span>u</span>
+        <span>n</span>
+        <span>g</span>
+        <span>(</span>
+        <span>)</span>
+        <span>;</span>
+      </div>
     </div>
-
 
     <div id="page2" class="page hidden">
-        <h1>hi! page2!</h1>
+      <h1>hi! page2!</h1>
     </div>
-
 
     <div id="page3" class="page hidden">
-        <h1>hi! page3!</h1>
+      <h1>hi! page3!</h1>
     </div>
-    
+    <script src="script.js"></script>
   </body>
 </html>
