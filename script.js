@@ -8,30 +8,17 @@ function showPage(pageId) {
   var selectedPage = document.getElementById(pageId);
   selectedPage.classList.remove("hidden");
 
-  if (pageId === "page1") {
-    loadDisqus();
-  } else {
-    var disqusThread = document.getElementById("disqus_thread");
-    if (disqusThread) {
-      disqusThread.innerHTML = "";
-    }
-  }
-}
+  var spans = document.querySelectorAll("#page1 .text span");
 
-function loadDisqus() {
-  if (window.DISQUS) {
-    DISQUS.reset({
-      reload: true,
-      config: function () {
-        this.page.identifier = "page1";
-        this.page.url = window.location.href;
-      },
+  if (pageId !== "page1") {
+    spans.forEach(function (span) {
+      span.style.animation = "none";
+      span.style.opacity = "0";
     });
   } else {
-    var d = document,
-      s = d.createElement("script");
-    s.src = "https://YOUR_SHORTNAME.disqus.com/embed.js";
-    s.setAttribute("data-timestamp", +new Date());
-    (d.head || d.body).appendChild(s);
+    spans.forEach(function (span, index) {
+      span.style.animation = `fadeIn 0.5s forwards`;
+      span.style.animationDelay = `${index * 0.2}s`;
+    });
   }
 }
