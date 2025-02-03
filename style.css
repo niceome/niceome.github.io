@@ -11,7 +11,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 170px;
+  margin-top: 130px;
 }
 
 .select-page {
@@ -34,7 +34,8 @@ header {
 }
 
 .select-page ul li i {
-  font-size: 25px;
+  font-size: 40px;
+  padding: 0 20px;
 }
 
 .select-page a {
@@ -86,6 +87,11 @@ footer {
   margin-left: 30px;
 }
 
+.email a,
+.blog a {
+  text-decoration: none;
+}
+
 .email i,
 .blog i {
   font-size: 25px;
@@ -104,15 +110,19 @@ footer {
   align-items: center;
 }
 
+/* Hello, GiYoung(); */
 .text {
   margin-top: 150px;
 }
 
 .text span {
-  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
   padding: 0 8px;
   opacity: 0;
   animation: fadeIn 0.5s forwards;
+  color: #333;
 }
 
 .text span:nth-child(1) {
@@ -171,5 +181,58 @@ footer {
 }
 
 /* 2페이지 */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+/* 사진 스타일 */
+.my_photo {
+  margin-bottom: 20px;
+}
+
+.my_photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 자기소개 스타일 */
+.intro {
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro h3 {
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* 반응형 (모바일 최적화) */
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .intro {
+    text-align: left;
+  }
+}
 
 /* 3페이지 */
