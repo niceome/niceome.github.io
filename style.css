@@ -5,7 +5,7 @@ body {
   background: linear-gradient(to right, #b5ead7, #c7ceea);
 }
 
-/* 고정 영역역 */
+/* 고정 영역 */
 
 header {
   display: flex;
@@ -105,7 +105,7 @@ footer {
 }
 
 .text {
-  margin-top: 70px;
+  margin-top: 150px;
 }
 
 .text span {
