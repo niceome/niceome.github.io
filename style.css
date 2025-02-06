@@ -244,31 +244,9 @@ footer {
   display: flex;
   margin-top: 100px;
   width: 70%;
-  min-width: 100%;
   justify-content: center;
   overflow-x: auto;
-  padding: 10px auto;
-}
-
-.favorite h1 {
-  font-size: 28px;
-  font-weight: bold;
-  color: #333;
-  font-family: "Poppins", sans-serif;
-  padding: 8px;
-  border-radius: 15px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  box-shadow: 3px 3px 10px black;
-}
-
-.favorite h2 {
-  font-size: 22px;
-  font-weight: 500;
-  color: #555;
-  font-family: "Noto Sans KR", sans-serif;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
+  padding: 10px 0;
 }
 
 .favorite img {
@@ -280,22 +258,12 @@ footer {
 }
 
 .favorite div {
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
   flex-shrink: 0;
-  padding: 15px 20px;
-  background: #f9f9f9; /* 부드러운 배경색 */
-  border-radius: 12px; /* 둥근 모서리 */
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 효과 */
-  transition: transform 0.3s ease-in-out;
-}
-
-.favorite div:hover {
-  transform: scale(1.05);
 }
 
 .birthYear,
@@ -307,7 +275,6 @@ footer {
   justify-content: center;
   align-items: center;
   height: 100%;
-  margin: 0 20px;
 }
 
 /* 반응형 (모바일 최적화) */
@@ -321,5 +288,3 @@ footer {
     text-align: left;
   }
 }
-
-/* 3페이지 */
